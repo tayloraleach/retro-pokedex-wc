@@ -1,0 +1,36 @@
+{
+  "name": "pokedex-wc",
+  "version": "0.0.1",
+  "type": "module",
+  "author": {
+    "name": "Taylor Leach"
+  },
+  "description": "An old school pokedex, now in your browser!",
+  "main": "./dist/pokedex-wc.js",
+  "module": "./dist/pokedex-wc.js",
+  "exports": {
+    ".": {
+      "import": "./dist/pokedex-wc.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --p ./tsconfig-build.json && vite build && cp preview/index.html dist/index.html",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "lit": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "gh-pages": "^6.3.0",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}
