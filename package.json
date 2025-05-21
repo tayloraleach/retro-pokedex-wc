@@ -5,6 +5,7 @@
   "author": {
     "name": "Taylor Leach"
   },
+  "homepage": "https://tayloraleach.github.io/retro-pokedex-wc",
   "description": "An old school pokedex, now in your browser!",
   "main": "./dist/pokedex-wc.js",
   "module": "./dist/pokedex-wc.js",
